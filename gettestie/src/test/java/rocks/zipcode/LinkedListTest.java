@@ -17,7 +17,7 @@ public class LinkedListTest {
 
     @Before
     public void setUp() throws Exception {
-        LinkedList<String> array = new LinkedList<String>();
+        array = new LinkedList<>();
         array.add(TEST_STRING1);
         array.add(TEST_STRING2);
     }
@@ -26,13 +26,13 @@ public class LinkedListTest {
     public void tearDown() throws Exception {
     }
 
-//    @Test
-//    public void testLinkedList() {
-//        //assertEquals(array.getLast(),TEST_STRING2);
-//        assertEquals(array.getFirst(),TEST_STRING1);
-//        array.remove(TEST_STRING1);
-//        assertEquals(array.size(),1);
-//    }
+    @Test
+    public void testLinkedList() {
+        assertEquals(array.getLast(),TEST_STRING2);
+        assertEquals(array.getFirst(),TEST_STRING1);
+        array.remove(TEST_STRING1);
+        assertEquals(array.size(),1);
+    }
 
 
 }
